@@ -1,18 +1,45 @@
-*, *::before, *::after{
+:root {
+    --bg-light: #DBECF5;
+
+    --base-light: #FFFFFF;
+
+    --text-dark: #00113C;
+}
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-body{
+body {
+    background-color: var(--bg-light);
     margin: 0;
-    padding: 0;
+    padding: 15% 0;
 }
 
-.container{
+.container {
     display: flex;
     margin: 0 auto;
 }
 
-.card{
-    max-width: 18rem;
+.card {
+    color: var(--text-dark);
     flex-direction: column;
+    background: var(--base-light);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 20rem;
+}
+
+.card img {
+    border-radius: .5rem;
+}
+
+.card h2 {
+    margin: 2rem 0 0 0;
+}
+
+.card p {
+    padding: .5rem;
+    margin: 1rem;
 }
