@@ -2,6 +2,7 @@
     --bg-light: #DBECF5;
 
     --base-light: #FFFFFF;
+    --base-shadow: #00113C;
 
     --text-dark: #00113C;
 }
@@ -11,6 +12,7 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: var(--bg-light);
     margin: 0;
     padding: 15% 0;
@@ -25,6 +27,7 @@ body {
     color: var(--text-dark);
     flex-direction: column;
     background: var(--base-light);
+    box-shadow: 0 5rem 20rem -7rem var(--base-shadow);
     text-align: center;
     border-radius: 1rem;
     padding: 1rem;
@@ -40,6 +43,6 @@ body {
 }
 
 .card p {
-    padding: .5rem;
-    margin: 1rem;
+    font-weight: 300;
+    margin: 1rem .5rem 1.5rem .5rem;
 }
